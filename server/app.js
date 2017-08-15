@@ -17,6 +17,7 @@ mongoose.connect('mongodb://localhost/hacktivegapress', err => {
     
 const index = require('./routes/index');
 const auth = require('./routes/auth');
+const article = require('./routes/article')
 
 // app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -26,6 +27,7 @@ app.use(cors());
 
 app.use('/', index);
 app.use('/auth', auth);
+app.use('/articles', article)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
