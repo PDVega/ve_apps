@@ -1,11 +1,10 @@
 <template>
-  <router-link :to="'/blog/' + article.id" class="list-group-item">
+  <router-link :to="'/articles/' + article._id" class="list-group-item">
     <div class="row">
       <div class="col-md-4">
-        <img :src="article.image" class="img-responsive"/>
       </div>
       <div class="col-md-8">
-        <router-link :to="'/blog/' + article.id">
+        <router-link :to="'/articles/' + article._id">
           <h4 class="list-group-item-heading">
             {{ article.title }}
           </h4>

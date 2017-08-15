@@ -17,7 +17,7 @@
             <router-link to="/">Home <span class="sr-only">(current)</span></router-link>
           </li>
           <li>
-            <router-link to="/blog">Article</router-link>
+            <router-link to="/articles">Article</router-link>
           </li>
         </ul>
       </div>

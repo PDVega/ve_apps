@@ -6,7 +6,6 @@ import actions from './actions'
 Vue.use(Vuex)
 
 const initialState = {
-  count: 0,
   articles: []
 }
 

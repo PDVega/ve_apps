@@ -3,7 +3,6 @@
     <h2>{{ article.title }}</h2>
     <div class="row">
       <div class="col-md-offset-2 col-md-8">
-        <img :src="article.image" class="img-responsive"/>
       </div>
     </div>
     <div class="row">

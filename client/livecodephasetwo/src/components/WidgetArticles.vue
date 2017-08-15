@@ -7,7 +7,7 @@
       <div class="list-group">
         <router-link 
         v-for="(article, index) in articles" 
-        :to="'/blog/' + article.id" 
+        :to="'/articles/' + article.id" 
         class="list-group-item"
         :key="index"
         >
