@@ -1,15 +1,28 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
+import Home from '@components/Home'
+import MainContent from '@components/MainContent'
+import ArticleDetail from '@components/ArticleDetail'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: Hello
+      component: Home,
+      children: [
+        {
+          path: '',
+          component: MainContent
+        },
+        {
+          path: ':id',
+          component: ArticleDetail,
+          props: true
+        }
+      ]
     }
   ]
 })
